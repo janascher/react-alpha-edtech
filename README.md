@@ -15,6 +15,35 @@
 ### Aula 01 - Conhecendo o React
 
 Configuração e preparação do ambiente de desenvolvimento com React.
+---
+### Aula 02 - Props
+#### Parte 1
+Veja o exemplo abaixo:
+
+```typescript
+function formatName(user) {
+	return user.firstName;
+}
+
+const user = {
+	firstName: 'Harper',
+};
+
+const element = (
+	<h1>
+		Olá, {formatName(user)}!
+	</h1>
+);
+
+ReactDOM.render(
+	element,
+	document.getElementById('root')
+);
+```
+Modifique o código acima para que seja exibido em seu navegador a seguinte mensagem: “Olá, meu nome é SEU NOME COMPLETO, tenho X anos e este é meu primeiro contato com JSX.”
+
+**Obs.:** A idade deverá ser o resultado de um campo de ano de nascimento subtraído pelo ano atual, e devem obrigatoriamente estar no objeto.
+
 
 ## 🔗 Referências básicas
 
