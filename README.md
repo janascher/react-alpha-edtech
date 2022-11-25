@@ -15,39 +15,40 @@
 ### Aula 01 - Conhecendo o React
 
 Configuração e preparação do ambiente de desenvolvimento com React.
+
 ---
+
 ### Aula 02 - Props
-#### Parte 1
-Veja o exemplo abaixo:
+
+#### Parte 1 - Veja o exemplo abaixo:
 
 ```typescript
 function formatName(user) {
-	return user.firstName;
+    return user.firstName;
 }
 
 const user = {
-	firstName: 'Harper',
+    firstName: 'Harper',
 };
 
-const element = (
-	<h1>
-		Olá, {formatName(user)}!
-	</h1>
-);
+const element = <h1>Olá, {formatName(user)}!</h1>;
 
-ReactDOM.render(
-	element,
-	document.getElementById('root')
-);
+ReactDOM.render(element, document.getElementById('root'));
 ```
+
 Modifique o código acima para que seja exibido em seu navegador a seguinte mensagem: “Olá, meu nome é SEU NOME COMPLETO, tenho X anos e este é meu primeiro contato com JSX.”
 
 **Obs.:** A idade deverá ser o resultado de um campo de ano de nascimento subtraído pelo ano atual, e devem obrigatoriamente estar no objeto.
 
+#### Parte 2 - Realize o exercício prático proposto em aula:
+
+Criar um formulário de conta de usuário.
 
 ## 🔗 Referências básicas
 
--   [Crie um novo React App – React (reactjs.org)](https://pt-br.reactjs.org/docs/create-a-new-react-app.html#create-react-app)
+-   [Crie um novo React App – React (reactjs.org)](https://pt-br.reactjs.org/docs/create-a-new-react-app.html#create-react-app);
+-   [Componentes e Props – React (reactjs.org)](https://pt-br.reactjs.org/docs/components-and-props.html);
+-   [Understanding Rendering in React - DEV Community](https://dev.to/teo_garcia/understanding-rendering-in-react-i5i#render)
 
 ## 🦸 Autor
 
