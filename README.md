@@ -44,6 +44,11 @@ Modifique o código acima para que seja exibido em seu navegador a seguinte mens
 
 Criar um formulário de conta de usuário.
 
+---
+### Aula 03 - State
+
+Ao submeter o formulário do exercício da aula 02, tem que abrir um modal.
+
 ## 🔗 Referências básicas
 
 -   [Crie um novo React App – React (reactjs.org)](https://pt-br.reactjs.org/docs/create-a-new-react-app.html#create-react-app);
