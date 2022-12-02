@@ -18,7 +18,7 @@ Configuração e preparação do ambiente de desenvolvimento com React.
 
 ---
 
-### Aula 02 - Props
+### Aula 02 - Conceitos Essenciais - Parte 1
 
 #### Parte 1 - Veja o exemplo abaixo:
 
@@ -45,9 +45,15 @@ Modifique o código acima para que seja exibido em seu navegador a seguinte mens
 Criar um formulário de conta de usuário.
 
 ---
-### Aula 03 - State
+### Aula 03 - - Conceitos Essenciais - Parte 2
 
 Ao submeter o formulário do exercício da aula 02, tem que abrir um modal.
+
+---
+
+### Aula 04 - - Conceitos Essenciais - Parte 3
+
+Criar um fetch, fazer uma requisição usando o formulário da aula anterior e o retorno dela guardar no useState.
 
 ## 🔗 Referências básicas
 
