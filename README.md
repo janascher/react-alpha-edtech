@@ -45,15 +45,23 @@ Modifique o código acima para que seja exibido em seu navegador a seguinte mens
 Criar um formulário de conta de usuário.
 
 ---
-### Aula 03 - - Conceitos Essenciais - Parte 2
+### Aula 03 - Conceitos Essenciais - Parte 2
 
 Ao submeter o formulário do exercício da aula 02, tem que abrir um modal.
 
 ---
 
-### Aula 04 - - Conceitos Essenciais - Parte 3
+### Aula 04 - Conceitos Essenciais - Parte 3
 
 Criar um fetch, fazer uma requisição usando o formulário da aula anterior e o retorno dela guardar no useState.
+
+---
+
+### Aula 05 - Conceitos Essenciais - Parte 4
+
+- Usar o formulário sem uso de hooks (FormData)
+- Migrar para react funcional (se estivesse usando classes)
+- Colocar cada componente em arquivo separado (se não estiver)
 
 ## 🔗 Referências básicas
 
