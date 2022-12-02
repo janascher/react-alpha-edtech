@@ -1,8 +1,6 @@
-/* import React, { useState } from 'react'; */
-import useModal from '../../../../hooks/useModal';
+import { IModal } from "../../../../models/imodal";
 
-function ButtonModal() {
-    const { toggle } = useModal();
+function ButtonModal({ toggle }: IModal) {
 
     return <button onClick={toggle}>X</button>;
 }

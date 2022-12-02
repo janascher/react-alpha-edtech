@@ -1,17 +1,16 @@
-import { IModalType } from '../../../models/imodal';
-/* import ButtonModal from './Button'; */
+import { IModal } from '../../../models/imodal';
 import './Modal.scss';
 
-function Modal({ children, isOpen, toggle }: IModalType) {
+function Modal({ children, isOpen, toggle }: IModal) {
     return (
         <>
             {isOpen && (
-                <div className="modalOverlay">
+                <div className="modalOverlay" onClick={toggle}>
                     <div className="modalBox" onClick={(e) => e.stopPropagation()}>
                         <div>
                             <button onClick={toggle}>X</button>
                         </div>
-                        {children}
+                        <p>{children}</p>
                     </div>
                 </div>
             )}

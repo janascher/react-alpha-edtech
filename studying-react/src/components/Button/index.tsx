@@ -1,19 +1,8 @@
-import { IButtonType } from '../../models/ibutton';
-import useModal from '../../hooks/useModal';
-import Modal from '../Form/Modal';
+import { IButton } from '../../models/ibutton';
 
-function Button({ children }: IButtonType) {
+function Button({ children }: IButton) {
 
-    const { isOpen, toggle } = useModal();
-
-    return (
-        <>
-            <button onClick={toggle}>{children}</button>
-            <Modal isOpen={isOpen} toggle={toggle}>
-                Login efetuado!
-            </Modal>
-        </>
-    );
+    return <button>{children}</button>;
 }
 
 export default Button;
