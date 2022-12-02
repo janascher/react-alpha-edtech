@@ -1,16 +1,24 @@
 import React, { useState } from 'react';
 import Button from '../Button';
+import Modal from './Modal';
 
 function Form() {
     const [userName, setUserName] = useState('');
     const [userEmail, setUserEmail] = useState('');
     const [userPassWord, setUserPassWord] = useState('');
 
+    let [isOpen, setIsOpen] = useState(false);
+
     async function loginUsers(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
         const formData = new FormData(e.target as HTMLFormElement);
         const body = Object.fromEntries(formData.entries());
+        setIsOpen(true);
         console.log(body);
+    }
+
+    function toggle() {
+        setIsOpen(!isOpen);
     }
 
     return (
@@ -53,7 +61,10 @@ function Form() {
                         required
                     />
                 </div>
-                <Button>Cadastrar</Button>
+                <Button onClick={toggle}>Cadastrar</Button>
+                <Modal isOpen={isOpen} toggle={toggle}>
+                    Login efetuado!
+                </Modal>
             </form>
         </>
     );
