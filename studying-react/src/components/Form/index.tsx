@@ -9,12 +9,20 @@ function Form() {
 
     let [isOpen, setIsOpen] = useState(false);
 
-    async function loginUsers(e: React.FormEvent<HTMLFormElement>) {
+    async function submitUsers(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
         const formData = new FormData(e.target as HTMLFormElement);
         const body = Object.fromEntries(formData.entries());
         setIsOpen(true);
-        console.log(body);
+
+        const res = await fetch('http://127.0.0.1:8000/account/', {
+            method: 'POST',
+            headers: { 'Content-type': 'application/json' },
+            body: JSON.stringify(body),
+        }).then((res) => res.json());
+
+        console.log(`Body: `, body);
+        console.log(`Res: `, res);
     }
 
     function toggle() {
@@ -23,7 +31,7 @@ function Form() {
 
     return (
         <>
-            <form onSubmit={loginUsers}>
+            <form onSubmit={submitUsers}>
                 <h1>Faça seu login</h1>
                 <div>
                     <label htmlFor="userName">Nome</label>
