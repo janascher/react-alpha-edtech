@@ -1,5 +1,5 @@
 export interface IButton {
     children: React.ReactNode;
-    type?: 'submit';
+    type?: 'submit' | 'button';
     onClick: () => void;
 }

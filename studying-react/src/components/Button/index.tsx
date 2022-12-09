@@ -1,8 +1,8 @@
-import { IButton } from '../../models/ibutton';
+import { IButton } from '../../models/ibuttonprops';
 import { SButton } from './styled';
 
-function Buttons({ children }: IButton) {
+function Button({ children }: IButton) {
     return <SButton>{children}</SButton>;
 }
 
-export default Buttons;
+export default Button;
