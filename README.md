@@ -63,6 +63,20 @@ Criar um fetch, fazer uma requisição usando o formulário da aula anterior e o
 - Migrar para react funcional (se estivesse usando classes)
 - Colocar cada componente em arquivo separado (se não estiver)
 
+---
+
+### Aula 06 - Conceitos Essenciais - Parte 5
+
+Estilizar os componentes criados utilizando MUI e Styled Components.
+
+---
+
+### Aula 07 - Conceitos Avançados - Parte 1
+
+- Criar um formulário para login do usuário, onde ao submeter realizará a requisição;
+- Criar um UserContext e guardar os dados retornados do login no contexto;
+- (Desafio) Mostrar no Modal (criado anteriormente) esses dados que foram guardados usando o Context.
+
 ## 🔗 Referências básicas
 
 -   [Crie um novo React App – React (reactjs.org)](https://pt-br.reactjs.org/docs/create-a-new-react-app.html#create-react-app);

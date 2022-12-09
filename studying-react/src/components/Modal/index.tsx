@@ -1,9 +1,8 @@
 /* import React, { useState } from 'react'; */
-import { IModal } from '../../models/imodal';
+import { IModal } from '../../models/imodalprops';
 import { SDiv, SModalBox, SModalOverlay } from './styled';
 
 function SimpleModal({ children, isOpen, toggle }: IModal) {
-    console.log('Toggle ', isOpen);
     return (
         <>
             {isOpen && (
