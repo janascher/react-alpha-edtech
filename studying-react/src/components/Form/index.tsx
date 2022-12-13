@@ -1,16 +1,16 @@
-import React, { useContext, useState } from 'react';
+/* import React, { useContext, useState } from 'react'; */
+import React, { useState } from 'react';
 import '../../index.css';
 import { IFormProps } from '../../models/iformprops';
 
 import Button from '../Button';
 import SimpleModal from '../Modal';
 import { SForm } from './styled';
-import { UserContext } from '../../contexts/user';
+/* import { UserContext } from '../../contexts/user'; */
 
 function Form({ children, textSubmit }: IFormProps) {
     let [isOpen, setIsOpen] = useState(false);
-    const { userData, setUserData } = useContext(UserContext);
-    
+    /* const { userData, setUserData } = useContext(UserContext); */
 
     async function formSubmitHandle(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();

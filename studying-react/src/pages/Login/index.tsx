@@ -13,7 +13,8 @@ function LoginPage() {
                 padding: '10px',
                 marginTop: '50px',
                 borderRadius: '10px',
-            }}>
+            }}
+        >
             <UserProvider>
                 <Form textSubmit="Cadastrar">
                     <M.Typography
@@ -21,8 +22,9 @@ function LoginPage() {
                         sx={{
                             color: 'inherit',
                             paddingBottom: '5px',
-                        }}>
-                        Faça seu login
+                        }}
+                    >
+                        Faça seu acesso
                     </M.Typography>
                     <div>
                         <SInput
