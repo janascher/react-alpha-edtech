@@ -5,7 +5,6 @@ import UserProvider from '../../contexts/user';
 import Form from '../../components/Form';
 
 function RegisterPage() {
-
     return (
         <M.Container
             sx={{
@@ -14,7 +13,8 @@ function RegisterPage() {
                 padding: '10px',
                 marginTop: '50px',
                 borderRadius: '10px',
-            }}>
+            }}
+        >
             <UserProvider>
                 <Form textSubmit="Cadastrar">
                     <M.Typography
@@ -22,7 +22,8 @@ function RegisterPage() {
                         sx={{
                             color: 'inherit',
                             paddingBottom: '5px',
-                        }}>
+                        }}
+                    >
                         Cadastre-se
                     </M.Typography>
                     <div>
